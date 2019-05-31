@@ -21,20 +21,18 @@
         <com.example.myview.ShawdowLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:round_corner="50dp"
+            app:round_corner_top_left="100dp"
+            app:round_corner_bottom_left="100dp"
             app:shadow_width="3dp"
-            app:shadow_color="#000000"
-            android:background="@color/colorAccent"
+            app:shadow_color="#20000000"
             app:clip_background="true"
             android:padding="30dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="shashjhashjga"
-                android:layout_gravity="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="22sp"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/image"
+                android:scaleType="centerCrop"/>
         </com.example.myview.ShawdowLayout>
 
 
