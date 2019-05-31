@@ -16,8 +16,26 @@
             android:layout_height="200dp" />
 
         <com.example.myview.RadarView
-            android:layout_width="400dp"
-            android:layout_height="400dp" />
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <com.example.myview.ShawdowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:round_corner="50dp"
+            app:shadow_width="3dp"
+            app:shadow_color="#000000"
+            android:background="@color/colorAccent"
+            app:clip_background="true"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shashjhashjga"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"/>
+        </com.example.myview.ShawdowLayout>
 
 
     </LinearLayout>

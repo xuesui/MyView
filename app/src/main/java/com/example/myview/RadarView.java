@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 public class RadarView extends View {
@@ -42,11 +43,13 @@ public class RadarView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        Log.d("Draw", "onDraw: 111");
         super.onDraw(canvas);
         drawCorners(canvas);
         drawLines(canvas);
         drawTest(canvas);
         drawInit(canvas);
+
     }
 
     private void drawInit(Canvas canvas) {
